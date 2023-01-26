@@ -1,0 +1,6 @@
+/home/jakob/Documents/code/opengl/hello-window/build/CMakeFiles/hello-window.exec.dir
+/home/jakob/Documents/code/opengl/hello-window/build/CMakeFiles/edit_cache.dir
+/home/jakob/Documents/code/opengl/hello-window/build/CMakeFiles/rebuild_cache.dir
+/home/jakob/Documents/code/opengl/hello-window/build/lib/glad/CMakeFiles/glad.dir
+/home/jakob/Documents/code/opengl/hello-window/build/lib/glad/CMakeFiles/edit_cache.dir
+/home/jakob/Documents/code/opengl/hello-window/build/lib/glad/CMakeFiles/rebuild_cache.dir
