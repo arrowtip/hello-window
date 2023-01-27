@@ -1,1 +1,0 @@
-/usr/bin/c++ "CMakeFiles/hello-window.exec.dir/src/main.cpp.o" -o hello-window.exec  lib/glad/libglad.a /usr/lib/libglfw.so.3.3 -lOpenGL 
