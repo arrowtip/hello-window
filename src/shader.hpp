@@ -19,7 +19,7 @@ class Shader {
             std::string vertexCode;
             std::string fragmentCode;
             std::ifstream vShaderFile;
-            std::ifStream fShaderFile;
+            std::ifstream fShaderFile;
             // ensure ifstream objects can throw exceptions
             vShaderFile.exceptions(std::ifstream::failbit | std::ifstream::badbit);
             fShaderFile.exceptions(std::ifstream::failbit | std::ifstream::badbit);
@@ -38,7 +38,7 @@ class Shader {
                 vertexCode = vShaderStream.str();
                 fragmentCode = fShaderStream.str();
             } catch (std::ifstream::failure e) {
-                std::out << "ERROR::SHADER::FILE_COULD_NOT_BE_READ" << std::endl;
+                std::cout << "ERROR::SHADER::FILE_COULD_NOT_BE_READ" << std::endl;
             }
             const char* vShaderCode = vertexCode.c_str();
             const char* fShaderCode = fragmentCode.c_str();
@@ -65,7 +65,7 @@ class Shader {
             glGetShaderiv(fragment, GL_COMPILE_STATUS, &success);
             if (!success) {
                 glGetShaderInfoLog(fragment, 512, NULL, infoLog);
-                std::out << "ERROR::SHADER::FRAGMENT::COMPILATION_FAILED\n" << infoLog << std::endl;
+                std::cout << "ERROR::SHADER::FRAGMENT::COMPILATION_FAILED\n" << infoLog << std::endl;
             }
 
             // create shader program
