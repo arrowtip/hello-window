@@ -142,6 +142,19 @@ glad/fast:
 	$(MAKE) $(MAKESILENT) -f lib/glad/CMakeFiles/glad.dir/build.make lib/glad/CMakeFiles/glad.dir/build
 .PHONY : glad/fast
 
+#=============================================================================
+# Target rules for targets named stb_image
+
+# Build rule for target.
+stb_image: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stb_image
+.PHONY : stb_image
+
+# fast build rule for target.
+stb_image/fast:
+	$(MAKE) $(MAKESILENT) -f lib/stb_image/CMakeFiles/stb_image.dir/build.make lib/stb_image/CMakeFiles/stb_image.dir/build
+.PHONY : stb_image/fast
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -176,6 +189,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... glad"
 	@echo "... hello-window.exec"
+	@echo "... stb_image"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

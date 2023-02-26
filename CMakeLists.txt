@@ -16,6 +16,10 @@ add_executable(${PROJECT_NAME}.exec ${SOURCE_FILES} ${HEADER_FILES})
 add_subdirectory(lib/glad/ ${CMAKE_CURRENT_BINARY_DIR}/lib/glad)
 target_link_libraries(${PROJECT_NAME}.exec glad)
 
+# include local stb_image code
+add_subdirectory(lib/stb_image/ ${CMAKE_CURRENT_BINARY_DIR}/lib/stb_image)
+target_link_libraries(${PROJECT_NAME}.exec stb_image)
+
 # glfw
 find_package(glfw3 REQUIRED)
 target_link_libraries(${PROJECT_NAME}.exec glfw)
